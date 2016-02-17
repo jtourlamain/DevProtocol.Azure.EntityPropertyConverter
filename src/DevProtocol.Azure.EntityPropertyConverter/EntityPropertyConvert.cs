@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.WindowsAzure.Storage.Table;
+using Newtonsoft.Json;
 
 namespace DevProtocol.Azure.EntityPropertyConverter
 {
