@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E14B37CF-F066-4022-8AC5-E570FC604ED5}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{4D4FAAA8-36F0-4A91-94FA-8D2F343D512D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DevProtocol.Azure.EntityPropertyConverter</RootNamespace>
-    <AssemblyName>DevProtocol.Azure.EntityPropertyConverter</AssemblyName>
+    <RootNamespace>DevProtocol.Azure.EntityPropertyConverter.Demo</RootNamespace>
+    <AssemblyName>DevProtocol.Azure.EntityPropertyConverter.Demo</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,9 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EntityPropertyConvert.cs" />
-    <Compile Include="EntityPropertyConverterAttribute.cs" />
+    <Compile Include="AzureDomain\Feature.cs" />
+    <Compile Include="Contracts\IAppConfiguration.cs" />
+    <Compile Include="Contracts\IFeature.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DevProtocol.Azure.EntityPropertyConverter\DevProtocol.Azure.EntityPropertyConverter.csproj">
+      <Project>{e14b37cf-f066-4022-8ac5-e570fc604ed5}</Project>
+      <Name>DevProtocol.Azure.EntityPropertyConverter</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
