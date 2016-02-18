@@ -13,7 +13,7 @@ This attribute allows you to configure which complex types must be serialized in
 - [Jan Tourlamain](https://github.com/jtourlamain "Jan Tourlamain GitHub")
 
 ## More info
-- [www.devprotocol.com](http://www.devprotocol.com "www.devprotocol.com")
+- [http://www.devprotocol.com/azure-table-storage-and-complex-types-stored-in-json/](http://www.devprotocol.com/azure-table-storage-and-complex-types-stored-in-json/ "www.devprotocol.com")
 
 ## License
 Licensed under MIT see License file. Each plugin licensed under parent license unless stated in it's readme file.
